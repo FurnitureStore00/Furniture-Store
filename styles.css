@@ -1,0 +1,95 @@
+/* Top Main Div */
+.TopDiv{
+    display: grid;
+    grid-template-areas: 
+    'top top top top'
+    'txt1 txt2 txt3 txt4'
+    ;
+    text-align: center;
+    background-color: rgba(190, 225, 228, 1);
+}
+.LogoDiv{
+    grid-area: top;
+}
+.HomeDiv{
+    grid-area: txt1;
+}
+.CategoriesDiv{
+    grid-area: txt2;
+}
+.AboutDiv{
+    grid-area: txt3;
+}
+.LoginDiv{
+    grid-area: txt4;
+}
+.HomeDiv:hover{
+    cursor: context-menu;
+}
+.CategoriesContent a:hover{
+    background-color: rgb(65, 105, 105);
+    cursor: pointer;
+ }
+ .HomeDiv:hover{
+     cursor: context-menu;
+     background-color: rgb(208, 229, 231);
+ }
+ .LoginDiv:hover{
+     cursor: context-menu;
+     background-color: rgb(208, 229, 231);
+ }
+/*dropdown content*/
+.drpCat{
+    position: relative;
+    display: inline-block;
+}
+.CategoriesContent{
+    display: none;
+    position: absolute;
+    background-color: rgb(172, 177, 178);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(222, 14, 14, 0.2);
+    z-index: 1;
+}
+.drpCat:hover .CategoriesContent{
+    display: block;
+}
+.CategoriesContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.drpCatxt:hover{
+    background-color: rgb(208, 229, 231);
+    cursor: context-menu;
+    opacity: 0.6;
+}
+/*chairs categories*/
+.drpCat2{
+    position: relative;
+    display: inline-block;
+}
+.CategoriesContent2{
+    display: none;
+    position: absolute;
+    background-color: rgba(59, 178, 201, 0.2);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.drpCat2:hover .CategoriesContent2{
+    display: block;
+}
+.CategoriesContent2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.drpCatxt2:hover{
+    background-color: rgb(208, 229, 231);
+    cursor: context-menu;
+    opacity: 0.6;
+    font-weight: bolder;
+}
